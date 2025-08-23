@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/Button"
-import { Card, CardContent } from "@/components/ui/Card"
-import { Badge } from "@/components/ui/Badge"
-import { Users, Clock, Shield, Star, Briefcase, UserCheck } from "lucide-react"
+import { Button } from "@/components/ui/Button";
+import { Card, CardContent } from "@/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
+import { Users, Clock, Shield, Star, Briefcase, UserCheck } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -38,7 +38,8 @@ export default function HomePage() {
                   <span className="text-primary"> Hire staff in minutes.</span>
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-2xl">
-                  Dnevnica connects businesses with students and jobseekers for flexible, short-term gigs.
+                  Dnevnica connects businesses with students and jobseekers for
+                  flexible, short-term gigs.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -46,7 +47,11 @@ export default function HomePage() {
                   <Briefcase className="mr-2 h-5 w-5" />
                   Post a Job
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-lg px-8 py-6 bg-transparent"
+                >
                   <UserCheck className="mr-2 h-5 w-5" />
                   Find a Gig
                 </Button>
@@ -69,7 +74,9 @@ export default function HomePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">How It Works</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+              How It Works
+            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Simple steps to connect businesses with workers
             </p>
@@ -81,9 +88,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                   <Briefcase className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">Businesses post short jobs</h3>
+                <h3 className="text-xl font-semibold">
+                  Businesses post short jobs
+                </h3>
                 <p className="text-muted-foreground">
-                  Post your staffing needs quickly with details about the role, duration, and pay.
+                  Post your staffing needs quickly with details about the role,
+                  duration, and pay.
                 </p>
               </CardContent>
             </Card>
@@ -93,9 +103,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                   <Users className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">Workers accept and show up</h3>
+                <h3 className="text-xl font-semibold">
+                  Workers accept and show up
+                </h3>
                 <p className="text-muted-foreground">
-                  Browse available gigs, apply instantly, and show up ready to work.
+                  Browse available gigs, apply instantly, and show up ready to
+                  work.
                 </p>
               </CardContent>
             </Card>
@@ -105,9 +118,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">Payments are secured via the platform</h3>
+                <h3 className="text-xl font-semibold">
+                  Payments are secured via the platform
+                </h3>
                 <p className="text-muted-foreground">
-                  Safe, secure payments processed automatically when work is completed.
+                  Safe, secure payments processed automatically when work is
+                  completed.
                 </p>
               </CardContent>
             </Card>
@@ -119,8 +135,12 @@ export default function HomePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">What Our Users Say</h2>
-            <p className="text-xl text-muted-foreground">Real feedback from businesses and workers</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+              What Our Users Say
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Real feedback from businesses and workers
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -128,11 +148,15 @@ export default function HomePage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  "Perfect for finding quick shifts between classes. I've earned over €500 this month!"
+                  "Perfect for finding quick shifts between classes. I've earned
+                  over €500 this month!"
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -150,11 +174,15 @@ export default function HomePage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  "Saved our restaurant during busy weekend. Found reliable staff in under 30 minutes!"
+                  "Saved our restaurant during busy weekend. Found reliable
+                  staff in under 30 minutes!"
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -172,11 +200,15 @@ export default function HomePage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  "Great way to earn extra income. The platform is easy to use and payments are always on time."
+                  "Great way to earn extra income. The platform is easy to use
+                  and payments are always on time."
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -196,7 +228,9 @@ export default function HomePage() {
       {/* Call to Action */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Ready to get started?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+            Ready to get started?
+          </h2>
           <p className="text-xl text-muted-foreground">
             Join thousands of businesses and workers already using Dnevnica
           </p>
@@ -214,16 +248,28 @@ export default function HomePage() {
               <h3 className="text-xl font-bold text-primary">Dnevnica</h3>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 About
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Contact
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Terms
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Privacy
               </a>
             </div>
@@ -234,5 +280,5 @@ export default function HomePage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
