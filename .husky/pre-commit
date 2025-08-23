@@ -1,0 +1,12 @@
+#!/bin/sh
+# pre-commit hook v10+
+
+echo "🔍 Formatting frontend..."
+cd frontend && npm run format || echo "No frontend format script found"
+cd ..
+
+echo "🔍 Formatting backend..."
+cd backend && npm run format || echo "No backend format script found"
+cd ..
+
+echo "✅ Formatting done (only staged files will commit)."
