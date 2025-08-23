@@ -1,19 +1,28 @@
-build:
-  name: Build Check
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
+name: Build Check
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: "22.13.1"
-        cache: "npm"
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
-    - name: Install Dependencies
-      run: npm install
+jobs:
+  build:
+    name: Build Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-    - name: Build Frontend
-      run: |
-        cd frontend
-        npm run build
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.1"
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm run build
