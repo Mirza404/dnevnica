@@ -11,7 +11,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-primary">Dnevnica</h1>
+              <h1 className="text-2xl font-bold text-primary">
+                <img src="DNEVNICA_final_default.png" alt="" className="w-[150px] h-[150px]" />
+              </h1>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="ghost" className="hidden sm:inline-flex">
@@ -60,7 +62,7 @@ export default function HomePage() {
             <div className="flex justify-center">
               <div className="w-full max-w-md h-80 bg-gradient-to-br from-primary/10 to-secondary/20 rounded-2xl flex items-center justify-center shadow-lg">
                 <img
-                  src="/work-gig-connections.png"
+                  src="https://images.pexels.com/photos/4065133/pexels-photo-4065133.jpeg"
                   alt="People connecting for work"
                   className="w-full h-full object-cover rounded-2xl"
                 />
