@@ -2,17 +2,23 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Clock, Shield, Star, Briefcase, UserCheck } from "lucide-react";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Navbar */}
       <nav className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-[17em] px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-primary">
-                <img src="DNEVNICA_final_default.png" alt="" className="w-[150px] h-[150px]" />
+                <Image
+                  src="/DNEVNICA.png"
+                  alt=""
+                  width={150}
+                  height={100}
+                /> 
               </h1>
             </div>
             <div className="flex items-center space-x-4">
@@ -157,8 +163,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  "Perfect for finding quick shifts between classes. I've earned
-                  over €500 this month!"
+                  &quot;Perfect for finding quick shifts between classes. I&apos;ve earned
+                  over €500 this month!&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -183,8 +189,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  "Saved our restaurant during busy weekend. Found reliable
-                  staff in under 30 minutes!"
+                  &quot;Saved our restaurant during busy weekend. Found reliable
+                  staff in under 30 minutes!&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -209,8 +215,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  "Great way to earn extra income. The platform is easy to use
-                  and payments are always on time."
+                  &quot;Great way to earn extra income. The platform is easy to use
+                  and payments are always on time.&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
