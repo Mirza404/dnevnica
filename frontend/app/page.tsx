@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "./components/ui/button";
+import { Card, CardContent } from "./components/ui/card";
+import { Badge } from "./components/ui/badge";
 import { Users, Clock, Shield, Star, Briefcase, UserCheck } from "lucide-react";
 import Image from "next/image";
 
@@ -13,12 +13,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-primary">
-                <Image
-                  src="/DNEVNICA.png"
-                  alt=""
-                  width={150}
-                  height={100}
-                /> 
+                <Image src="/DNEVNICA.png" alt="" width={150} height={100} />
               </h1>
             </div>
             <div className="flex items-center space-x-4">
@@ -163,8 +158,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  &quot;Perfect for finding quick shifts between classes. I&apos;ve earned
-                  over €500 this month!&quot;
+                  &quot;Perfect for finding quick shifts between classes.
+                  I&apos;ve earned over €500 this month!&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -215,8 +210,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground">
-                  &quot;Great way to earn extra income. The platform is easy to use
-                  and payments are always on time.&quot;
+                  &quot;Great way to earn extra income. The platform is easy to
+                  use and payments are always on time.&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
