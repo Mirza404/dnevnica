@@ -122,9 +122,6 @@ jobs:
       - name: Install frontend dependencies
         run: cd frontend && npm ci --include=dev
 
-      - name: Install backend dependencies
-        run: cd backend && npm ci --include=dev
-
 
 
       - name: Build Frontend
