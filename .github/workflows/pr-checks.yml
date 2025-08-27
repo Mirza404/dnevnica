@@ -41,8 +41,8 @@ jobs:
           node-version: "22.13.1"
           cache: "npm"
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install frontend dependencies
+        run: cd frontend && npm ci --include=dev
 
       - name: Check Frontend Formatting
         run: |
@@ -66,13 +66,11 @@ jobs:
           node-version: "22.13.1"
           cache: "npm"
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install frontend dependencies
+        run: cd frontend && npm ci --include=dev
 
       - name: Lint Frontend
-        run: |
-          cd frontend
-          npm run lint
+        run: cd frontend && npm run lint
 
       # - name: Lint Backend
       #   run: |
@@ -92,7 +90,7 @@ jobs:
           cache: "npm"
 
       - name: Install Dependencies
-        run: npm install
+        run: cd frontend && npm ci --include=dev
 
       - name: Type Check Frontend
         run: |
@@ -121,8 +119,6 @@ jobs:
 
       - name: Install frontend dependencies
         run: cd frontend && npm ci --include=dev
-
-
 
       - name: Build Frontend
         run: |
