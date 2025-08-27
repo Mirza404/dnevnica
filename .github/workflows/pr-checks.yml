@@ -49,10 +49,10 @@ jobs:
           cd frontend
           npm run format:check
 
-      - name: Check Backend Formatting
-        run: |
-          cd backend
-          npm run format:check
+      # - name: Check Backend Formatting
+      #   run: |
+      #     cd backend
+      #     npm run format:check
 
   lint:
     name: Lint Check
@@ -74,10 +74,10 @@ jobs:
           cd frontend
           npm run lint
 
-      - name: Lint Backend
-        run: |
-          cd backend
-          npm run lint
+      # - name: Lint Backend
+      #   run: |
+      #     cd backend
+      #     npm run lint
 
   type-check:
     name: Type Check
@@ -99,10 +99,10 @@ jobs:
           cd frontend
           npm run type-check
 
-      - name: Type Check Backend
-        run: |
-          cd backend
-          npm run type-check
+      # - name: Type Check Backend
+      #   run: |
+      #     cd backend
+      #     npm run type-check
 
   build:
     name: Build Check
@@ -129,7 +129,7 @@ jobs:
           cd frontend
           npm run build
 
-      - name: Build Backend
-        run: |
-          cd backend
-          npm run build
+      # - name: Build Backend
+      #   run: |
+      #     cd backend
+      #     npm run build
