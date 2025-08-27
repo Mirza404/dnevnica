@@ -19,9 +19,8 @@ jobs:
           node-version: "22.13.1"
           cache: "npm"
 
-      - name: Install frontend dependencies
-        run: cd frontend && npm ci --include=dev
-
+      - name: Install Dependencies
+        run: npm install
 
       - name: Check for lock file changes
         run: |
@@ -90,7 +89,7 @@ jobs:
           node-version: "22.13.1"
           cache: "npm"
 
-      - name: Install Frontend Dependencies
+      - name: Install Dependencies
         run: cd frontend && npm ci --include=dev
 
       - name: Type Check Frontend
@@ -115,8 +114,8 @@ jobs:
           node-version: "22.13.1"
           cache: "npm"
 
-      # - name: Install Dependencies
-      #   run: npm ci --include=dev
+      - name: Install Dependencies
+        run: npm ci --include=dev
 
       - name: Install frontend dependencies
         run: cd frontend && npm ci --include=dev
