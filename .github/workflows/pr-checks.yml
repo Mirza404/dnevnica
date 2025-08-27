@@ -41,8 +41,8 @@ jobs:
           node-version: "22.13.1"
           cache: "npm"
 
-      - name: Install frontend dependencies
-        run: cd frontend && npm ci --include=dev
+      - name: Install Dependencies
+        run: npm install
 
       - name: Check Frontend Formatting
         run: |
